@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>Login Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h1 {
+        color: blue;
+        font-style: "Times New Roman";
+        font-size: 45px;
+        margin: 20px 600px 20px 400px;
+        font-weight: bold;
+      }
+      body {
+        background-image: url("Registration.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      table {
+        font-size: 30px;
+
+        border-radius: 30px;
+      }
+      input {
+        font-size: 30px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      .button {
+        color: aqua;
+        background-color: blue;
+      }
+      form {
+        border: 10px solid black;
+        padding: 50px;
+        margin-left: 300px;
+        margin-right: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 align="center">Please Enter your details..</h1>
+    <form action="Login" method="post">
+      <table>
+        <tr>
+          <td><label>CustId :</label></td>
+          <td><input type="text" name="custid" /><br /><br /></td>
+        </tr>
+        <tr>
+          <td><label>Password :</label></td>
+          <td><input type="password" name="pwd" /><br /><br /></td>
+        </tr>
+        <tr>
+          <td><input type="submit" class="button" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

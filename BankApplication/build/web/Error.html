@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Login page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-image: url("home.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      h2 {
+        color: rgb(245, 5, 5);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 80px;
+        font-weight: bolder;
+        font-weight: 700%;
+      }
+      h3 {
+        color: rgb(49, 234, 32);
+        font-family: "Times New Roman", Times, serif;
+        font-size: 50px;
+        font-weight: bolder;
+        font-weight: 700%;
+      }
+      input {
+        font-size: 30px;
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: transparent;
+        color: red;
+      }
+      label {
+        color: skyblue;
+        font-size: 30px;
+        background-color: transparent;
+      }
+      form {
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Invalid data</h2>
+
+    <h3>Dear customer,please enter your details!</h3>
+
+    <form action="Login">
+      <table>
+        <tr>
+          <td><label>CustId :</label></td>
+          <td><input type="text" name="custid" /></td>
+          <br /><br />
+        </tr>
+        <tr>
+          <td><label>Password :</label></td>
+          <td><input type="password" name="pwd" /></td>
+          <br /><br />
+        </tr>
+        <td><input type="submit" value="Login" /></td>
+      </table>
+    </form>
+  </body>
+</html>

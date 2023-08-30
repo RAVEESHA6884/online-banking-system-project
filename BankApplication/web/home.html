@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <title>Home Page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        background-image: url("home.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      h1 {
+        color: rgb(6, 246, 6);
+        font-style: "Times New Roman";
+        font-size: 65px;
+        margin: 10px 400px;
+        padding: 20px 100px;
+        font-weight: bolder;
+      }
+      button {
+        font-size: 40px;
+        background-color: transparent;
+      }
+      a {
+        color: skyblue;
+      }
+      input {
+        padding: 15px 30px;
+        background-color: red;
+
+        font-size: larger;
+      }
+      table {
+        margin-left: 10px;
+      }
+      .logout {
+        border: 5 px solid black;
+      }
+      form {
+        margin: 10px 1400px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="Logout" method="post" class="logout">
+      <input type="submit" value="Logout" />
+    </form>
+    <div>
+      <h1 align="center">Welcome to your account</h1>
+    </div>
+    <table>
+      <tr>
+        <td>
+          <button>
+            <a href="Checkbalance"> Click here to check balance</a></button
+          ><br /><br />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button>
+            <a href="ChangePwd.html"> Click here to change password</a></button
+          ><br /><br />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button><a href="ApplyLoan.html"> Click here to apply loan</a></button
+          ><br /><br />
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

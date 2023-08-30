@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Change Password page</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      h2 {
+        color: blue;
+        font-style: "Times New Roman";
+        font-size: 50px;
+
+        font-weight: bold;
+      }
+      body {
+        background-image: url("home.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      table {
+        font-size: 30px;
+        margin: 10px 700px 800px 10px;
+        border-radius: 30px;
+      }
+      input {
+        font-size: 30px;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      label {
+        color: skyblue;
+      }
+      input {
+        color: red;
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Please enter your new password</h2>
+
+    <table>
+      <form action="ChangePassword.jsp" method="post">
+        <tr>
+          <td><label>New Password :</label></td>
+          <td><input type="password" name="npwd" id="npwd" /></td>
+          <br /><br />
+        </tr>
+        <tr>
+          <td><label>Confirm Password</label></td>
+          <td>
+            <input
+              type="password"
+              name="cpwd"
+              id="cpwd"
+              onkeyup="confirmPassword();"
+            />
+          </td>
+          <br /><br />
+        </tr>
+        <span id="msg"></span><br /><br />
+        <tr>
+          <td><input type="submit" value="Change" /></td>
+        </tr>
+      </form>
+    </table>
+    <script>
+      function confirmPassword() {
+        var npwd = document.getElementById("npwd").value;
+        var cpwd = document.getElementById("cpwd").value;
+        if (npwd != cpwd) {
+          document.getElementById("msg").innerHTML =
+            "<i style ='color:red;'>new password and confirm does not match</i>";
+        } else {
+          document.getElementById("msg").innerHTML =
+            "<i style ='color:green;'>password matched!</i>";
+        }
+      }
+    </script>
+  </body>
+</html>
